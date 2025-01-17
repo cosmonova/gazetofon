@@ -1,0 +1,129 @@
+import Image from 'next/image'
+import {GeistSans} from 'geist/font/sans';
+
+import {JetBrains_Mono} from 'next/font/google'
+
+const jetBrainsMono = JetBrains_Mono({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+})
+
+// Predefined array of background image URLs
+const backgroundImages = [
+    '/01.jpg',
+    '/02.jpg',
+    '/03.jpg',
+    '/04.jpg',
+    '/05.jpg'
+]
+
+export default function Page() {
+    // const [backgroundImage, setBackgroundImage] = useState(false)
+    // const [imageLoaded, setImageLoaded] = useState(false)
+    //
+    // useEffect(() => {
+    //     // Select a random background image on component mount
+    //     const randomIndex = Math.floor(Math.random() * backgroundImages.length)
+    //     setBackgroundImage(backgroundImages[randomIndex])
+    // }, [])
+
+    const randomBackgroundImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)]
+
+    return (
+        <>
+            <main className={`relative min-h-dvh w-full overflow-hidden bg-gray-400 ${jetBrainsMono.className}`}>
+                {/* Dotted Grid Background */}
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        backgroundImage: 'radial-gradient(circle, #636363 1px, transparent 1px)',
+                        backgroundSize: '20px 20px',
+                    }}
+                ></div>
+
+                {/* Background Image */}
+                <div className={`absolute inset-0 transition-opacity duration-1000`}>
+                    <Image
+                        src={randomBackgroundImage}
+                        alt="Background"
+                        fill
+                        style={{objectFit: 'cover', opacity: 0.9}}
+                        priority
+                    />
+                    {/* Overlay for better text readability */}
+                    <div className="absolute inset-0 bg-black/30"></div>
+                </div>
+
+                {/* Content */}
+                <div className="relative flex min-h-dvh flex-col">
+                    {/* Main Content */}
+                    <div className="flex-1 flex flex-col items-start justify-center ">
+                        {/*<h1>*/}
+                        {/*    <Image*/}
+                        {/*        src="/logo.svg"*/}
+                        {/*        alt="Background"*/}
+                        {/*        fill*/}
+                        {/*        style={{ opacity:0.9}}*/}
+                        {/*        priority*/}
+                        {/*    />*/}
+                        {/*</h1>*/}
+                        <h1 className="text-5xl leading-none bg-clip-text text-left w-full pl-8 pt-8 text-[#ffdb01]/80
+                        pe-10 bg-blend-multiply font-bold tracking-tighter transform animate-slidein [--slidein-delay:500ms] opacity-0">
+                            boundary
+                        </h1>
+                        <h1 className="text-5xl leading-none bg-clip-text text-left w-full pl-8 text-white/70 pe-10
+                        font-bold tracking-tighter animate-slidein [--slidein-delay:800ms] opacity-0">lab_</h1>
+
+                        <p className="text-[#f1f1f1]/70 text-3xl p-8 mt-4 max-w-6xl tracking-tight font-light leading-tight
+                        animate-slidein [--slidein-delay:1200ms] opacity-0">
+                            Growing in times of accelerated technological change.
+                        </p>
+                        <p className="text-[#f1f1f1]/80 text-base font-normal p-8 pt-0 mt-4 max-w-5xl drop-shadow-lg
+                        animate-slidein [--slidein-delay:1500ms] opacity-0">
+                             <span className={GeistSans.className}>
+                            Born into a world where technology is advancing at an unprecedented rate, we have witnessed
+                            firsthand the transformative power of innovation. From the early days of the internet to the
+                            current era of artificial intelligence, the pace of technological progress has been nothing
+                            short of breathtaking.
+                            Growing up in this environment has had a profound impact on our lives. We have seen the rise
+                            of social media, which has revolutionized the way we communicate and interact with one
+                            another. We have witnessed the emergence of e-commerce, which has transformed the way we
+                            shop and conduct business. And we have experienced the dawn of the digital age, where
+                            information is at our fingertips and the world is at our command.<br/><br/>
+
+                            As we look to the future, it is clear that technological change will continue to accelerate.
+                            We can expect to see the rise of new technologies, such as quantum computing and
+                            biotechnology, which will have a profound impact on our lives. And we can expect to see the
+                            continued evolution of
+                            existing technologies, such as artificial intelligence and the internet of things, which
+                            will shape the world in ways both big and small.<br/><br/>
+
+                            <b className={"font-bold"}>Our mission</b> is to help you adapt, innovate and work together to
+                            create a better world for all.
+                             </span>
+                        </p>
+                        <p className="pl-8 mt-8 max-w-md animate-slidein [--slidein-delay:1800ms] opacity-0">
+                            <a href="mailto:office@boundarylab.com"
+                               className="bg-black/80 text-white/80 hover:bg-[#ffdb01]/80
+                               hover:text-black/80 px-2 py-2 transition-colors duration-200 rounded-br-md rounded-tl-md
+                               font-bold text-sm p-8">
+                                <span className={GeistSans.className}>&nbsp;CONTACT&nbsp;</span>
+                            </a>
+                        </p>
+                    </div>
+
+                    {/* Footer */}
+                    <footer className="relative p-4 pl-8 flex justify-between items-start text-xs text-white/70">
+                        <div className="flex flex-col items-start ">
+                            <span className={GeistSans.className}>2024 &copy; boundarylab.com</span>
+                        </div>
+                        <div className="flex items-center">
+                            {/* Right side content (currently empty) */}
+                        </div>
+                    </footer>
+                </div>
+            </main>
+        </>
+    )
+}
+
