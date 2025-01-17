@@ -10,6 +10,11 @@ import ImagePage from "@/components/Image";
 import AudioPlayerWithPlaylist from "@/components/Audio";
 import YouTubePlayerWithPlaylist from "@/components/Video";
 import MusicPlayer from "@/components/AudioPlayer";
+import {HyperText} from "@/components/ui/hyper-text";
+import {PixelTrailDemo} from "@/components/screen-saver";
+import {NewsLetter} from "@/components/NewsLetter";
+import InfiniteSliderVertical from "@/components/Gallery";
+import {UnderlineDemo} from "@/components/Footer";
 
 // const jetBrainsMono = Chakra_Petch({
 //     subsets: ['latin'],
@@ -47,20 +52,21 @@ export default function Page() {
                         </Link>
                     </div>
                     <div className="flex space-x-1 text-left">
-                        <Link href="#" className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors font-extrabold">
+                        <Link href="#" className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors font-bold">
                             NEWSLETTER
                         </Link>
-                        <Link href="#" className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors font-extrabold">
+                        <Link href="#" className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors font-bold">
                             ABOUT
                         </Link>
-                        <a href="#" className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors font-extrabold" target="_blank">
+                        <a href="#" className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors font-bold" target="_blank">
                             EDITORIAL
                         </a>
                     </div>
                     <div className="bg-[#FF4C2C] p-5">
-                        <Link href="#" className="text-2xl font-extrabold">
-                            GZTFN
-                        </Link>
+
+                        GZTFN
+
+
                     </div>
                 </nav>
             </div>
@@ -94,48 +100,6 @@ export default function Page() {
                         <NewsPage/>
                     </div>
                 </section>
-
-                {/*<section className="min-h-screen flex flex-col text-center bg-[#5200FF]">*/}
-                {/*    <div className="columns-2 w-full p-0 s-0">*/}
-                {/*        <div className="bg-blue-300 p-2">*/}
-
-                {/*            <MediaThemeMicrovideo>*/}
-                {/*                <YoutubeVideo*/}
-                {/*                    slot="media"*/}
-                {/*                    src="https://www.youtube.com/watch?v=uxsOYVWclA0"*/}
-                {/*                    playsInline*/}
-                {/*                ></YoutubeVideo>*/}
-                {/*            </MediaThemeMicrovideo>*/}
-
-
-                {/*        </div>*/}
-                {/*        <div className="bg-red-300 p-2">*/}
-                {/*            <h1 className="text-8xl">*/}
-                {/*                <span className={majorMonoDisplay.className}> BRUTALISM DELIVERY ...</span>*/}
-                {/*            </h1>*/}
-                {/*            <p className={jetBrainsMono.className}>*/}
-                {/*                If you need your footer to be seen always on the screen or like this at the end of the*/}
-                {/*                page, here is the answer.*/}
-                {/*            </p>*/}
-                {/*            <p>*/}
-                {/*                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a*/}
-                {/*                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard*/}
-                {/*                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of*/}
-                {/*                the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through*/}
-                {/*                the cites of the word in classical literature, discovered the undoubtable source. Lorem*/}
-                {/*                Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The*/}
-                {/*                Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the*/}
-                {/*                theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,*/}
-                {/*                Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.*/}
-                {/*                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those*/}
-                {/*                interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero*/}
-                {/*                are also reproduced in their exact original form, accompanied by English versions from*/}
-                {/*                the 1914 translation by H. Rackham.*/}
-                {/*            </p>*/}
-
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
                 <section className="min-h-screen flex flex-col bg-gray-400">
                     {/*bg-[#5200FF]*/}
                     <EventPage/>
@@ -151,6 +115,18 @@ export default function Page() {
 
                 <section className="min-h-screen flex flex-col bg-emerald-400">
                     <MusicPlayer/>
+                </section>
+
+                <section className="min-h-screen flex flex-col bg-blue-400 p-6">
+                    <PixelTrailDemo/>
+                </section>
+
+                <section className="min-h-screen flex flex-col bg-orange-500 p-6">
+                    <NewsLetter/>
+                </section>
+
+                <section className="min-h-screen flex flex-col bg-violet-500 p-6">
+                    <UnderlineDemo/>
                 </section>
 
                 {/*<div className="min-h-screen flex flex-col text-center bg-[#5200FF]">*/}

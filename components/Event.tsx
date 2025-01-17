@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"
+import {PixelTrail} from "@/components/ui/pixel-trail";
+
+import { useScreenSize } from "@/components/hooks/use-screen-size"
 
 interface EventDate {
     date: string
@@ -55,25 +58,27 @@ const upcomingDates: EventDate[] = [
 ]
 
 export default function EventPage() {
+
+    const screenSize = useScreenSize()
+
     return (
         <div className="min-h-screen  text-white p-6">
             <div className="flex mx-auto ">
                 {/* Main Content */}
                 <div className="grid lg:grid-cols-2 gap-8 ">
                     <div className="space-y-6">
-                        <div className="space-y-4">
-                            <h1 className="text-6xl font-light">Gazetofoniac</h1>
+                        <div className="space-y-4 antialiased">
+                            <h1 className="text-6xl font-light font-sans font-bold">Gazetofoniac</h1>
                             <p className="text-xl text-gray-400">locals</p>
                         </div>
-                        <div>
-                            {/*<Image*/}
-                            {/*    src="/cover.jpg"*/}
-                            {/*    alt="Event visual"*/}
-                            {/*    fill*/}
-                            {/*    style={{objectFit: 'cover', opacity: 0.9}}*/}
-                            {/*    priority*/}
-                            {/*/>*/}
-                        </div>
+                        {/*<div>*/}
+                        {/*    <PixelTrail*/}
+                        {/*        pixelSize={screenSize.lessThan(`md`) ? 48 : 80}*/}
+                        {/*        fadeDuration={0}*/}
+                        {/*        delay={1200}*/}
+                        {/*        pixelClassName="rounded-full bg-[#ffa04f]"*/}
+                        {/*    />*/}
+                        {/*</div>*/}
 
                         <p className="text-3xl leading-relaxed ">
                             Cu rădăcini în Graffiti și Street art, pe un fundal al muralismului, creația lui IRLO se
@@ -132,7 +137,7 @@ export default function EventPage() {
                                 </div>
                                 <div className="flex items-center gap-4">
                                     {/*<div className="w-4 h-4 border border-white"></div>*/}
-                                  
+
                                 </div>
                             </div>
                         ))}

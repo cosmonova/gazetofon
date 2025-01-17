@@ -110,7 +110,7 @@ export default function NewsPage() {
                                  </span>
                             </div>
 
-                            <h2 className="text-2xl font-bold mb-4 leading-tight">
+                            <h2 className="text-2xl font-bold mb-4 leading-tight font-sans">
                                  {article.title}
                             </h2>
 

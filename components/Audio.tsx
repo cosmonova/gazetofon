@@ -20,7 +20,7 @@ const AudioPlayerWithPlaylist: React.FC<AudioPlayerWithPlaylistProps> = ({ track
 
 
     if (tracks[currentTrackIndex].isSoundCloud) {
-      loadSoundCloudTrack(tracks[currentTrackIndex].src);
+      // loadSoundCloudTrack(tracks[currentTrackIndex].src);
     } else {
       setCurrentTrackSrc(tracks[currentTrackIndex].src);
     }
@@ -35,18 +35,18 @@ const AudioPlayerWithPlaylist: React.FC<AudioPlayerWithPlaylistProps> = ({ track
   const handleTrackChange = (index: number) => {
     setCurrentTrackIndex(index);
     if (audioRef.current) {
-      if (tracks[index].isSoundCloud) {
-        const loadSoundCloudTrack = async (url: string) => {
-          const response = await fetch(`https://api.soundcloud.com/resolve?url=${url}&client_id=YOUR_SOUNDCLOUD_CLIENT_ID`);
-          const data = await response.json();
-          audioRef.current!.src = data.stream_url + '?client_id=YOUR_SOUNDCLOUD_CLIENT_ID';
-          audioRef.current!.play();
-        };
-        loadSoundCloudTrack(tracks[index].src);
-      } else {
+      // if (tracks[index].isSoundCloud) {
+      //   const loadSoundCloudTrack = async (url: string) => {
+      //     const response = await fetch(`https://api.soundcloud.com/resolve?url=${url}&client_id=YOUR_SOUNDCLOUD_CLIENT_ID`);
+      //     const data = await response.json();
+      //     audioRef.current!.src = data.stream_url + '?client_id=YOUR_SOUNDCLOUD_CLIENT_ID';
+      //     audioRef.current!.play();
+      //   };
+      //   loadSoundCloudTrack(tracks[index].src);
+      // } else {
         audioRef.current.src = tracks[index].src;
         audioRef.current.play();
-      }
+      // }
     }
   };
 
