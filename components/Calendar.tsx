@@ -116,10 +116,10 @@ export default function CalendarView() {
                 {/* Events */}
                 <div className="space-y-16">
                     {events.map((day) => (
-                        <div key={day.date} className="flex gap-8">
+                        <div key={day.date} className="flex gap-8 hover:bg-yellow-500 p-4">
                             {/* Date */}
                             <div className="w-24">
-                                <div className="text-7xl font-light">{day.date}</div>
+                                <div className="text-7xl font-light ">{day.date}</div>
                                 <div className="text-sm mt-1">{day.day}</div>
                             </div>
 

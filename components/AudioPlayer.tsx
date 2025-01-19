@@ -96,7 +96,7 @@ export default function MusicPlayer() {
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Left Column */}
                     <div>
-                        <h1 className="text-6xl  mb-6">Gazetofoniac #1</h1>
+                        <h1 className="text-8xl  mb-6 title-fat">GAZETOFONIAC 1</h1>
                         {/*<p className="text-gray-400 mb-8">by <a href="#" className="text-blue-500">Gazetofon</a></p>*/}
 
                         {/* Audio Player */}
