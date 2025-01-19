@@ -8,7 +8,7 @@ function UnderlineDemo() {
         <div className="w-full h-full flex flex-col items-center justify-center bg-background">
             <div className="flex flex-row font-overusedGrotesk items-start text-[#0015ff] h-full py-36 uppercase space-x-8 text-sm sm:text-xl md:text-2xl lg:text-3xl">
                 <div>Contact</div>
-                <ul className="flex flex-col space-y-1 h-full">
+                <ul className="flex flex-col h-full">
                     <Link href="#">
                         <CenterUnderline label="FACEBOOK" />
                     </Link>

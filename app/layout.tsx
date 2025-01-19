@@ -21,7 +21,7 @@ export default function RootLayout({
 
       <meta
           httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.youtube.com https://youtu.be;"
+          content="default-src 'self'; img-src 'self' data:; media-src 'self' https://s3.eu-west-1.amazonaws.com ; connect-src 'self'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.youtube.com https://youtu.be;"
       />
       <title>BoundaryLab</title>
     </head>

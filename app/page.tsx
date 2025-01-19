@@ -8,12 +8,10 @@ import NewsPage from "@/components/News";
 import CalendarView from "@/components/Calendar";
 import ImagePage from "@/components/Image";
 import AudioPlayerWithPlaylist from "@/components/Audio";
-import YouTubePlayerWithPlaylist from "@/components/Video";
+// import YouTubePlayerWithPlaylist from "@/components/Video";
 import MusicPlayer from "@/components/AudioPlayer";
-import {HyperText} from "@/components/ui/hyper-text";
 import {PixelTrailDemo} from "@/components/screen-saver";
 import {NewsLetter} from "@/components/NewsLetter";
-import InfiniteSliderVertical from "@/components/Gallery";
 import {UnderlineDemo} from "@/components/Footer";
 
 // const jetBrainsMono = Chakra_Petch({
@@ -76,23 +74,27 @@ export default function Page() {
                     <div className="w-full p-0 s-0 pt-16">
                         <h1 className="text-6xl font-light mb-8">Compilation 2025</h1>
                         <AudioPlayerWithPlaylist tracks={[{
-                            src: "/audio/01.mp3",
+                            src: "https://s3.eu-west-1.amazonaws.com/boundarylab.com/Mad+Over+Me.mp3",
                             title: "Die Zukunft - Drogen nehmen und rumfahren (Yusuf Lemone Edit)"
                         }, {
-                            src: "/audio/02.mp3",
+                            src: "https://s3.eu-west-1.amazonaws.com/boundarylab.com/Matias+Aguayo+-+Rrrrr.mp3",
                             title: "Tapan - Europa (Album Version)"
-                        }]}/>
-                        <br/>
-                        <YouTubePlayerWithPlaylist videos={[
-                            {
-                                src: "https://www.youtube.com/embed/AMcREX5E1ZM",
-                                title: "Adina Oros - still"
-                            },
-                            {
-                                src: "https://www.youtube.com/embed/oQLSESN4Jqs",
-                                title: "Opal Deluge - X-TRA TIME (lyric video)"
-                            }
+                        }, {
+                            src: "https://s3.eu-west-1.amazonaws.com/boundarylab.com/Oom.mp3",
+                            title: "OOM"
+                        }
                         ]}/>
+                        <br/>
+                        {/*<YouTubePlayerWithPlaylist videos={[*/}
+                        {/*    {*/}
+                        {/*        src: "https://www.youtube.com/embed/AMcREX5E1ZM",*/}
+                        {/*        title: "Adina Oros - still"*/}
+                        {/*    },*/}
+                        {/*    {*/}
+                        {/*        src: "https://www.youtube.com/embed/oQLSESN4Jqs",*/}
+                        {/*        title: "Opal Deluge - X-TRA TIME (lyric video)"*/}
+                        {/*    }*/}
+                        {/*]}/>*/}
                     </div>
                 </section>
                 <section className="bg-yellow-300 min-h-screen flex flex-col  p-6 ">
@@ -121,7 +123,7 @@ export default function Page() {
                     <PixelTrailDemo/>
                 </section>
 
-                <section className="min-h-screen flex flex-col bg-orange-500 p-6">
+                <section className="min-h-screen flex flex-col bg-orange-500 p-8">
                     <NewsLetter/>
                 </section>
 
