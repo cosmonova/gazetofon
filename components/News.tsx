@@ -1,5 +1,4 @@
-import {Circle, Hexagon} from 'lucide-react'
-import Image from "next/image";
+import {Circle} from 'lucide-react'
 
 interface NewsArticle {
     category: string
@@ -94,7 +93,7 @@ export default function NewsPage() {
     return (
         <div className="min-h-screen w-full pt-12">
             <div className="w-full mx-auto">
-                <h1 className="text-6xl font-light mb-16">News</h1>
+                <h1 className="text-6xl font-light mb-16 title-fat">NEWS</h1>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {newsArticles.map((article, index) => (

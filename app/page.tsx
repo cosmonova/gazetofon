@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import {AudioWaveform, Circle, Diamond, DiamondIcon, Disc, Moon, Plane, PlaneTakeoff} from "lucide-react"
+import {AudioWaveform} from "lucide-react"
 // import { Chakra_Petch, Major_Mono_Display } from 'next/font/google'
 import EventPage from "@/components/Event";
 import NewsPage from "@/components/News";
@@ -44,10 +44,8 @@ export default function Page() {
 
             <div className="flex flex-col fixed bottom-0 left-0 right-0 z-50">
                 <nav className="flex items-center justify-between w-full bg-white =">
-                    <div className="p-5">
-                        <Link href="#">
-                            <Disc/>
-                        </Link>
+                    <div className="p-4 title-fat text-5xl antialiased">
+                        ه
                     </div>
                     <div className="flex space-x-1 text-left">
                         <Link href="#" className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors font-bold">
@@ -60,11 +58,7 @@ export default function Page() {
                             EDITORIAL
                         </a>
                     </div>
-                    <div className="bg-[#FF4C2C] p-5">
-
-                        GZTFN
-
-
+                    <div className="bg-[#FF4C2C] p-4 title-fat text-5xl antialiased">٩
                     </div>
                 </nav>
             </div>
@@ -72,7 +66,7 @@ export default function Page() {
             <main className="overflow-auto">
                 <section className="bg-emerald-400 min-h-screen flex flex-col  p-6 ">
                     <div className="w-full p-0 s-0 pt-16">
-                        <h1 className="text-6xl font-light mb-8">Compilation 2025</h1>
+                        <h1 className="text-8xl font-light mb-8 title-fat text-white">Compilation 2025</h1>
                         <AudioPlayerWithPlaylist tracks={[{
                             src: "https://s3.eu-west-1.amazonaws.com/boundarylab.com/Mad+Over+Me.mp3",
                             title: "Die Zukunft - Drogen nehmen und rumfahren (Yusuf Lemone Edit)"

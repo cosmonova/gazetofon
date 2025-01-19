@@ -65,7 +65,7 @@ export default function EventPage() {
 
                 <div className="space-y-6 w-full">
                     <div className="space-y-4 antialiased">
-                        <h1 className="relative z-10 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground font-sans font-bold">
+                        <h1 className="relative z-10 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground title-fat">
                             Gazetofoniac 2
                         </h1>
                         <p className="text-xl text-gray-400">locals</p>
