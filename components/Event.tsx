@@ -103,7 +103,7 @@ export default function EventPage() {
                                 <table className="w-full text-left p-6 text-xl table-auto " >
                                     <tbody >
                                     {upcomingDates.map((date, index) => (
-                                    <tr>
+                                    <tr className="hover:bg-green-300">
                                         <td className="text-left p-2">{date.date}</td>
                                         <td className="text-left ">{date.day}</td>
                                         <td className="text-left">{date.time}</td>

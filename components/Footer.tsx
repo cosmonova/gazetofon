@@ -5,12 +5,12 @@ import { CenterUnderline, ComesInGoesOutUnderline, GoesOutComesInUnderline } fro
 
 function UnderlineDemo() {
     return (
-        <div className="w-full h-full flex flex-col items-center justify-center bg-background">
-            <div className="flex flex-row font-overusedGrotesk items-start text-[#0015ff] h-full py-36 uppercase space-x-8 text-sm sm:text-xl md:text-2xl lg:text-3xl">
+        <div className="w-full h-full flex flex-col items-center justify-center">
+            <div className="flex flex-row font-overusedGrotesk items-start text-white h-full py-36 uppercase space-x-8 text-sm sm:text-xl md:text-2xl lg:text-3xl">
                 <div>Contact</div>
                 <ul className="flex flex-col h-full">
                     <Link href="#">
-                        <CenterUnderline label="FACEBOOK" />
+                        <CenterUnderline label="FACEBOOK" className="white" />
                     </Link>
                     <Link href="#">
                         <ComesInGoesOutUnderline label="INSTAGRAM" direction="right" />
