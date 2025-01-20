@@ -60,12 +60,12 @@ export default function EventPage() {
 
     return (
         <div className="min-h-screen  text-white p-6">
-            <div className="flex mx-auto  lg:columns-2 sm:columns-1  gap-8">
+            <div className="mx-auto grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1  gap-8">
                 {/* Main Content */}
 
                 <div className="space-y-6 w-full">
                     <div className="space-y-4 antialiased">
-                        <h1 className="relative z-10 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground title-fat">
+                        <h1 className="lg:text-8xl md:text-2xl sm:text-xl text-transparent bg-gradient-to-b from-foreground to-muted-foreground title-fat">
                             Gazetofoniac 2
                         </h1>
                         <p className="text-xl text-gray-400">locals</p>

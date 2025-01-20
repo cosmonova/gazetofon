@@ -1,5 +1,5 @@
 import { ImageResponse } from 'next/og'
-import {  Major_Mono_Display } from 'next/font/google'
+import {  Major_Mono_Display  } from 'next/font/google'
 // Image metadata
 export const size = {
     width: 32,

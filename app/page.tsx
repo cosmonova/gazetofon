@@ -47,7 +47,7 @@ export default function Page() {
                     <div className="p-4 title-fat text-5xl antialiased">
                         ه
                     </div>
-                    <div className="flex space-x-1 text-left">
+                    <div className="flex space-x-1 text-left lg:hidden sm:hidden">
                         <Link href="#" className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors font-bold">
                             NEWSLETTER
                         </Link>
@@ -66,7 +66,7 @@ export default function Page() {
             <main className="overflow-auto">
                 <section className="bg-emerald-400 min-h-screen flex flex-col  p-6 ">
                     <div className="w-full p-0 s-0 pt-16">
-                        <h1 className="text-8xl font-light mb-8 title-fat text-white">Compilation 2025</h1>
+                        <h1 className="lg:text-8xl md:text-6xl sm:text-6xl mb-8 title-fat text-white">Compilation 2025</h1>
                         <AudioPlayerWithPlaylist tracks={[{
                             src: "https://s3.eu-west-1.amazonaws.com/boundarylab.com/Mad+Over+Me.mp3",
                             title: "Die Zukunft - Drogen nehmen und rumfahren (Yusuf Lemone Edit)"
