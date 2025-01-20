@@ -15,7 +15,7 @@ export default function Icon() {
             <div
                 style={{
                     fontSize: '40px',
-                    background: '#ffdb01',
+                    background: '#FF4C2C',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
@@ -24,8 +24,7 @@ export default function Icon() {
                     color: 'black',
                     borderRadius: '8px'
                 }}
-            >
-                ~
+            >◕
             </div>
         ),
         // ImageResponse options

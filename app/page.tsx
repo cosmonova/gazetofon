@@ -43,7 +43,7 @@ export default function Page() {
             </header>
 
             <div className="flex flex-col fixed bottom-0 left-0 right-0 z-50">
-                <nav className="flex items-center justify-between w-full bg-white =">
+                <nav className="flex items-center justify-between w-full bg-white">
                     <div className="p-4 title-fat text-5xl antialiased">
                         ه
                     </div>
