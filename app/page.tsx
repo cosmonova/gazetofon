@@ -31,14 +31,14 @@ export default function Page() {
         <div >
             <header className="flex flex-col fixed top-0 left-0 right-0 z-50">
 
-                <div className="flex items-center gap-2 mb-4 pl-6 pt-4 pb-4 text-sm bg-violet-400/90 text-white">
-                    <AudioWaveform className="w-8 h-8 "/>
-                    <span className="font-medium text-md">
-                    Se întâmplă, în sfârșit! Și e doar începutul. Prima colecție cu producții locale
-                        de muzică electronică și nu doar electronică. Muzică produsă sub influența și în atmosfera Clujului Napoca,
-                        de către pionierii fenomenului muzical electronic din orașul Gazetofonului
-                   </span>
-                </div>
+                {/*<div className="flex items-center gap-2 mb-4 pl-6 pt-4 pb-4 text-sm bg-violet-400/90 text-white">*/}
+                {/*    <AudioWaveform className="w-8 h-8 "/>*/}
+                {/*    <span className="font-medium text-md">*/}
+                {/*    Se întâmplă, în sfârșit! Și e doar începutul. Prima colecție cu producții locale*/}
+                {/*        de muzică electronică și nu doar electronică. Muzică produsă sub influența și în atmosfera Clujului Napoca,*/}
+                {/*        de către pionierii fenomenului muzical electronic din orașul Gazetofonului*/}
+                {/*   </span>*/}
+                {/*</div>*/}
 
             </header>
 
@@ -64,9 +64,11 @@ export default function Page() {
             </div>
 
             <main className="overflow-auto">
-                <section className="bg-emerald-400 min-h-screen flex flex-col  p-6 ">
+                <section className=" min-h-screen flex flex-col  p-6 dot-background bg-emerald-400">
+
                     <div className="w-full p-0 s-0 pt-16">
-                        <h1 className="lg:text-8xl md:text-6xl sm:text-6xl mb-8 title-fat text-white">Compilation 2025</h1>
+                        <h1 className="xl:text-8xl lg:text-8xl md:text-6xl sm:text-6xl text-5xl mb-8 title-fat text-white">Compilation
+                            2025</h1>
                         <AudioPlayerWithPlaylist tracks={[{
                             src: "https://s3.eu-west-1.amazonaws.com/boundarylab.com/Mad+Over+Me.mp3",
                             title: "Die Zukunft - Drogen nehmen und rumfahren (Yusuf Lemone Edit)"
@@ -78,17 +80,7 @@ export default function Page() {
                             title: "OOM"
                         }
                         ]}/>
-                        <br/>
-                        {/*<YouTubePlayerWithPlaylist videos={[*/}
-                        {/*    {*/}
-                        {/*        src: "https://www.youtube.com/embed/AMcREX5E1ZM",*/}
-                        {/*        title: "Adina Oros - still"*/}
-                        {/*    },*/}
-                        {/*    {*/}
-                        {/*        src: "https://www.youtube.com/embed/oQLSESN4Jqs",*/}
-                        {/*        title: "Opal Deluge - X-TRA TIME (lyric video)"*/}
-                        {/*    }*/}
-                        {/*]}/>*/}
+
                     </div>
                 </section>
                 <section className="bg-yellow-300 min-h-screen flex flex-col  p-6 ">

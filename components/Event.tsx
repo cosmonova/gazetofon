@@ -1,4 +1,4 @@
-import {useScreenSize} from "@/components/hooks/use-screen-size"
+
 import React from "react";
 
 interface EventDate {
@@ -56,7 +56,7 @@ const upcomingDates: EventDate[] = [
 
 export default function EventPage() {
 
-    const screenSize = useScreenSize()
+
 
     return (
         <div className="min-h-screen  text-white p-6">
@@ -65,7 +65,7 @@ export default function EventPage() {
 
                 <div className="space-y-6 w-full">
                     <div className="space-y-4 antialiased">
-                        <h1 className="lg:text-8xl md:text-2xl sm:text-xl text-transparent bg-gradient-to-b from-foreground to-muted-foreground title-fat">
+                        <h1 className=" lg:text-8xl md:text-4xl sm:text-4xl text-4xl title-fat">
                             Gazetofoniac 2
                         </h1>
                         <p className="text-xl text-gray-400">locals</p>
@@ -97,22 +97,18 @@ export default function EventPage() {
                 <div className="w-full rounded-md bg-background text-black">
                     <h2 className="text-3xl m-6">Upcoming dates</h2>
                     <div className="text-black m-6">
-
-
-
-                                <table className="w-full text-left p-6 text-xl table-auto " >
-                                    <tbody >
-                                    {upcomingDates.map((date, index) => (
-                                    <tr className="hover:bg-green-300">
-                                        <td className="text-left p-2">{date.date}</td>
-                                        <td className="text-left ">{date.day}</td>
-                                        <td className="text-left">{date.time}</td>
-                                        <td className="text-green-300 text-left">{date.theater}</td>
-                                    </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-
+                        <table className="w-full text-left p-6 text-xl table-auto ">
+                            <tbody>
+                            {upcomingDates.map((date, index) => (
+                                <tr className="hover:bg-yellow-400" key={index}>
+                                    <td className="text-left p-2">{date.date}</td>
+                                    <td className="text-left ">{date.day}</td>
+                                    <td className="text-left">{date.time}</td>
+                                    <td className="text-green-300 text-left">{date.theater}</td>
+                                </tr>
+                            ))}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

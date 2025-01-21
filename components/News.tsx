@@ -1,5 +1,7 @@
 import {Circle} from 'lucide-react'
 
+import * as motion from "motion/react-client"
+
 interface NewsArticle {
     category: string
     date: string
@@ -95,9 +97,9 @@ export default function NewsPage() {
             <div className="w-full mx-auto">
                 <h1 className="text-6xl font-light mb-16 title-fat">NEWS</h1>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     {newsArticles.map((article, index) => (
-                        <div key={index} className="border-t border-black pt-4">
+                        <div className="border-t border-black pt-4" key={index}>
                             {/*<div className="text-sm text-white mb-4">*/}
                             {/*    {article.category}*/}
                             {/*</div>*/}
@@ -109,7 +111,7 @@ export default function NewsPage() {
                                  </span>
                             </div>
 
-                            <h2 className="text-2xl font-bold mb-4 leading-tight font-sans">
+                            <h2 className="text-2xl font-bold mb-4 leading-tight font-sans text-white bg-black rounded p-1">
                                  {article.title}
                             </h2>
 
@@ -118,8 +120,6 @@ export default function NewsPage() {
                                     {article.description}
                                 </p>
                             )}
-                            
-
                         </div>
                     ))}
                 </div>

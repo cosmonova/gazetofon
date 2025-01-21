@@ -21,7 +21,7 @@ export default function RootLayout({
 
       <meta
           httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; img-src 'self' data:; media-src 'self' https://s3.eu-west-1.amazonaws.com; connect-src 'self'; font-src 'self' data: https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'  https://fonts.googleapis.com; frame-src 'self' https://www.youtube.com https://youtu.be;"
+          content="default-src 'self'; img-src 'self' data:; media-src 'self' https://s3.eu-west-1.amazonaws.com; connect-src 'self'; font-src 'self' data: https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'  https://fonts.googleapis.com; frame-src 'self' https://www.youtube.com https://youtu.be;"
       />
       <title>Gazetofon - A suburban magazine</title>
       <link href="https://fonts.googleapis.com/css2?family=Badeen+Display&display=swap" rel="stylesheet"/>
